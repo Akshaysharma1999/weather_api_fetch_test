@@ -14,7 +14,7 @@ app.post('/',  (req, res)=>{
         
         const request = require('request');
 
-        let apiKey = 'e7d881e54b8415e8a4b60831e8eb0b96'
+        let apiKey = '*' // not included
         let city = req.body.city_name
         let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 
